@@ -1,0 +1,37 @@
+$grey: #efefef;
+$base-blue: 171;
+$blue-light: hsla($base-blue, 50%, 75%, 100%);
+$blue-normal: hsla($base-blue, 50%, 50%, 100%);
+$blue-dark: hsla($base-blue, 50%, 35%, 100%);
+$base-green: 60;
+$green-light: hsla($base-green, 50%, 75%, 100%);
+$green-normal: hsla($base-green, 50%, 50%, 100%);
+$green-dark: hsla($base-green, 50%, 35%, 100%);
+$base-color2: 120;
+  /*base color 3*/
+$base-color3: 200; 
+$body-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$background-color: #fefefe;
+$bg-lighten: #dfdfdf;
+$border-radius-root: 6px;
+$font-size-root: 14px;
+
+// Variables must come before the import
+$btn-letter-spacing: 0;
+$btn-font-weight: 400;
+$list-item-title-font-size: 0.929rem;
+$list-item-dense-title-font-size: 0.929rem;
+$list-item-dense-title-font-weight: initial;
+$fab-icon-sizes: (
+  'small': 20
+);
+$btn-sizes: (
+  'default': 41,
+  'large': 54
+);
+
+%label {
+  font-weight: 100;
+  font-style: italic;
+  padding: 2px;
+}

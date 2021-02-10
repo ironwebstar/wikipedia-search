@@ -1,0 +1,227 @@
+$color-pack: false;
+@import "./variables.scss";
+@import "~vuetify/src/styles/main.sass";
+
+.v-main {
+  font-family: $body-font-family;
+}
+.v-btn {
+  padding: 12px !important;
+  font-weight: 400;
+  font-size: 14px !important;
+}
+.v-btn--text {
+  color: $green-dark !important;
+  font-weight: 400;
+  font-size: 14px !important;
+}
+.v-progress-linear {
+  background-color:rgb(223,223,159);
+}
+.v-progress-linear .v-progress-linear__indeterminate .long, .v-progress-linear .v-progress-linear__indeterminate .short {
+  background-color: #c3b860 !important;
+}
+.v-label {
+  @extend %label;
+}
+
+.v-card {
+  min-width: 300px;
+}
+.v-card__title {
+  background: $green-light;
+}
+
+.v-divider {
+  color: #000 !important;
+  border-color: green($color: #000000);
+}
+
+
+
+.form-row {
+  margin: 8px !important;
+  padding: 16px !important;
+}
+
+a {
+  text-decoration: none;
+  color: #9E9EDE;
+}
+.v-application a {
+  color: #86862d !important;
+}
+
+.v-application a:hover {
+  color: #4d4d1a !important;
+}
+
+.login-style {
+  background: #cfcfcf;
+}
+
+.app-style {
+  background: #f5f6fa;
+}
+
+
+.button-container{
+  height: 56px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.button-element {
+  margin: 10px;
+  flex: 0 1 auto;
+}
+.drawer-style {
+  background: -webkit-Linear-gradient(40grad, $blue-light, #e5ffe8) !important;
+  background: Linear-gradient(40grad, $blue-light, #e5ffe8) !important;
+}
+
+.v-list-item {
+  min-height: 24px;
+}
+.list-item-style {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.logo-style {
+  color: $green-dark;
+  margin-top: 0px !important;
+  font-weight: 200 !important;
+}
+.wikilink {
+  color: #9e9ede !important;
+  font-weight: 900;
+}
+h1 {
+  margin-top: 24px !important;
+  text-align: left !important;
+  font-weight: 800 !important;
+}
+h2 {
+  text-align: left !important;
+  font-weight: 600 !important;
+}
+h3 {
+  text-align: left !important;
+  font-weight: 600 !important;
+  margin-left: 0px;
+}
+#actions {
+  display: block;
+  width: min-content;
+}
+#actions-box {
+  height: 100% !important;
+  margin-left: auto;
+  min-width: 56px !important;
+  display: flex;
+  justify-content: center;
+}
+#actions-box>.v-navigation-drawer__content {
+  margin: auto;
+  height: unset;
+}
+#render-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px;
+  padding-left: 12px;
+  margin-bottom: 12px;
+  overflow-x: hidden;
+}
+#render-box.ps {
+  max-height: initial;
+}
+#render-box > table {
+  border: 1px solid black !important;
+}
+#render-box > th {
+  padding: 2px;
+  border: 1px solid black !important;
+}
+#render-box > tr {
+  border: 2px line black !important;
+  border-radius: 2px !important;
+  border-width: thick !important;
+  border-color: black !important;
+}
+#render-box > td {
+  padding: 2px;
+  border: 1px solid black !important;
+  border: 1px solid black !important;
+}
+
+#render-box > h1 {
+  margin-top: 16px !important;
+  text-align: left !important;
+  font-weight: 800 !important;
+}
+
+.te-switch-button.active {
+  background-color: #dfdf9f !important;
+  font-weight: 600 !important;
+}
+
+body::-webkit-scrollbar {
+  scrollbar-width: thin !important;
+  width: 5px;
+}
+body {
+  scrollbar-width: thin !important;
+  scrollbar-color: #757575 #f1f1f1;
+}
+body::-webkit-scrollbar-track {
+  scrollbar-width: thin !important;
+  background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+  scrollbar-width: thin !important;
+  background-color: #f1f1f1;
+}
+
+#router-view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow-y: hidden;
+}
+
+#toast-container {
+  // The height of this container is all of the parent minus 40px font for the title and 24px * 2 for top and bottom margin
+  height: calc(100% - 68px);
+}
+
+#viewer {
+  width: 100%;
+}
+#version-hint {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 8px;
+}
+#login-card {
+  max-width: 700px;
+  margin: auto;
+  width: 100%;
+}
+#login-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+div.editor-content div.v-input__control {
+  height: 100% !important;
+  padding-left: 4px;
+}
+div.editor-content div.v-input__control div.v-input__slot {
+  height: 100% !important;
+  align-items: normal;
+}

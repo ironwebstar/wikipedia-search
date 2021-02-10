@@ -1,0 +1,55 @@
+{
+  "name": "qmwiki",
+  "version": "1.0.0",
+  "main": "./src/main.js",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --https",
+    "build": "vue-cli-service build --mode $BRANCH",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@mdi/js": "^5.5.55",
+    "core-js": "^3.4.4",
+    "vue": "^2.6.10",
+    "vuetify": "^2.2.15",
+    "vuex": "^3.1.3",
+    "webpack": "^4.36.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.10.3",
+    "@nuxtjs/vuetify": "^1.11.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "@vue/cli-plugin-babel": "^4.2.3",
+    "@vue/cli-plugin-eslint": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-vuetify": "^0.6.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.26.2",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-vuetify": "^2.0.5",
+    "vue-cli-plugin-vuetify-preset-rally": "~1.0.4",
+    "vue-template-compiler": "^2.6.10",
+    "vue-test-utils": "^1.0.0-beta.11",
+    "vuetify-loader": "^1.3.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
