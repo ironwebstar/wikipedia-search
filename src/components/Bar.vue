@@ -9,7 +9,7 @@
       <p
         class="div-box mb-0 centered text-h4"
       >
-      Wiki Seach
+        Wiki Seach
       </p>
     </router-link>
     <div

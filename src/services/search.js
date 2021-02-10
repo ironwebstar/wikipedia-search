@@ -1,7 +1,14 @@
-import { axios } from 'axios'
+import axios from 'axios'
 
-const searchForArticlesByName = function (name) {
+export const searchForArticlesByName = async (name) => {
   // Resolve the request to wikipedia here
-}
+  const res = await axios.get('https://en.wikipedia.org/w/api.php', {
+    params: {
+      action: 'opensearch',
+      origin: '*',
+      search: name
+    }
+  })
 
-export { searchForArticlesByName }
+  return res
+}

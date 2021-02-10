@@ -1,14 +1,15 @@
 <template>
   <v-text-field
-    class="rounded"
+    v-model="name"
     outlined
     flat
+    solo
     label="Search here..."
+    class="rounded"
     type="text"
     color="black--text"
     :prepend-inner-icon="mdiMagnify"
     :loading="loading"
-    solo
     :hide-details="true"
     @keydown="search"
   >
@@ -27,16 +28,24 @@
 
 <script>
   import { mdiMagnify } from '@mdi/js'
+  import { mapActions } from 'vuex'
+
   export default {
-    data: function () {
+    data () {
       return {
         mdiMagnify,
         loading: false,
+        name: '',
       }
     },
+
     methods: {
-      search: function () {
+      ...mapActions(['searchForArticlesByName']),
+
+      async search () {
         this.loading = true
+        await this.searchForArticlesByName(this.name)
+
         setTimeout(() => {
           this.loading = false
         }, 2000)
